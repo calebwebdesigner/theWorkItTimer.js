@@ -1,3 +1,4 @@
+/*jshint esversion: 10*/
 /*
 copyright © 2022, calebwebdesigner
 made by: https://github.com/calebwebdesigner
