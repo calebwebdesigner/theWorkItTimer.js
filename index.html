@@ -1,0 +1,89 @@
+<!-- 
+copyright © 2022, calebwebdesigner
+made by: https://github.com/calebwebdesigner
+repo: https://github.com/calebwebdesigner/theWorkItTimer.js
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Work It! Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- heading, image grid -->
+    <h1>Are you ready to...</h1>
+    <h1 id="work-it">WORK IT!</h1>
+    <div id="img-container">
+        <div class="img-column">
+            <img src="img/pexels-tetyana-kovyrina-3678919.jpg" alt="Image didn't load :( (pexels-tetyana-kovyrina-3678919)">
+            <img src="img/pexels-capture-blinks-3068816.jpg" alt="Image didn't load :( (pexels-capture-blinks-3068816)">
+            <img src="img/pexels-jacob-morch-572780.jpg" alt="Image didn't load :( (pexels-jacob-morch-572780)">
+            <img src="img/pexels-josh-hild-2422259.jpg" alt="Image didn't load :( (pexels-josh-hild-2422259)">
+        </div>
+        <div class="img-column">
+            <img src="img/pexels-elianne-dipp-4666748.jpg" alt="Image didn't load :( (pexels-elianne-dipp-4666748)">
+            <img src="img/pexels-dick-hoskins-3684860.jpg" alt="Image didn't load :( (pexels-dick-hoskins-3684860)">
+            <img src="img/pexels-russell-towers-8960413.jpg" alt="Image didn't load :( (pexels-russell-towers-8960413)">
+            <img src="img/pexels-becka-h-8521121.jpg" alt="Image didn't load :( (pexels-becka-h-8521121)">
+            <img src="img/pexels-pixabay-33535.jpg" alt="Image didn't load :( (pexels-pixabay-33535)">
+        </div>
+        <div class="img-column">
+            <img src="img/pexels-pixabay-208444.jpg" alt="Image didn't load :( (pexels-pixabay-208444)">
+            <img src="img/pexels-surawitch-atsaradorn-1368042.jpg" alt="Image didn't load :( (pexels-surawitch-atsaradorn-1368042)">
+            <img src="img/pexels-alexandr-podvalny-1929611.jpg" alt="Image didn't load :( (pexels-alexandr-podvalny-1929611)">
+            <img src="img/pexels-iconcom-733174.jpg" alt="Image didn't load :( (pexels-iconcom-733174)">
+            <img src="img/pexels-ivica-džambo-3578416.jpg" alt="Image didn't load :( (pexels-ivica-džambo-3578416)">
+        </div>
+        <div class="img-column">
+            <img src="img/pexels-taryn-elliott-4099388.jpg" alt="Image didn't load :( (pexels-taryn-elliott-4099388)">
+            <img src="img/pexels-sevenstorm-juhaszimrus-575386.jpg" alt="Image didn't load :( (pexels-sevenstorm-juhaszimrus-575386)">
+            <img src="img/pexels-milan-masnikosa-5802054.jpg" alt="Image didn't load :( (pexels-milan-masnikosa-5802054)">
+            <img src="img/pexels-xxss-is-back-777001.jpg" alt="Image didn't load :( (pexels-xxss-is-back-777001)">
+            <img src="img/pexels-william-larsen-10452449.jpg" alt="Image didn't load :( (pexels-william-larsen-10452449)">
+        </div>
+    </div>
+
+    <!-- inspirational quote, timer display/button/adjustments -->
+    <h2>The secret to getting ahead, is getting started. You can do it! :D</h2>
+    <div id="content-container">
+        <div id="timer-container">
+            <h1 id="timer-minute">240</h1>
+            <h1>-</h1>
+            <h1 id="timer-second">00</h1>
+        </div>
+        <button id="timer-button">WORK IT!</button>
+        <div id="adjustment-container">
+            <h3>Alter the remaining time here:</h3>
+            <div id="adjustment-button-container">
+                <button id="add-1" class="timer-adjustment">+1</button>
+                <button id="remove-1" class="timer-adjustment">-1</button>
+                <button id="add-10" class="timer-adjustment">+10</button>
+                <button id="remove-10" class="timer-adjustment">-10</button>
+                <button id="reset" class="timer-adjustment">
+                    <img src="img/reset.png" alt="reset">
+                </button>
+            </div>
+        </div>
+        <h3 id="last-paused">Last paused @ NULL</h3>
+    </div>
+
+    <!-- popup that shows once timer runs out -->
+    <div id="timer-end-modal">
+        <div id="timer-end-modal-content">
+            <button>
+                <img src="img/close.png" alt="✖">
+            </button>
+            <div id="timer-end-modal-text">
+                <h1 id="well-done-you">WELL DONE YOU!</h1>
+                <h1>You're done for today (:</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

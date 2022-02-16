@@ -1,0 +1,181 @@
+/* 
+copyright © 2022, calebwebdesigner
+made by: https://github.com/calebwebdesigner
+repo: https://github.com/calebwebdesigner/theWorkItTimer.js
+*/
+
+html, * {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f6edd9;
+    margin: 16px 32px;
+    text-align: center;
+}
+button {
+    cursor: pointer;
+}
+
+/* headings */
+h1, h2, h3 {
+    padding: 16px 0;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.3rem;
+}
+
+/* work it! heading */
+#work-it {
+    animation: glow 1s ease-in-out infinite alternate;
+    font-size: 3.5rem;
+    padding-top: 0;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #0091bc, 0 0 10px #0091bc, 0 0 15px #0091bc, 0 0 20px #0091bc, 0 0 30px #37c77f, 0 0 35px #37c77f, 0 0 40px #37c77f, 0 0 45px #37c77f;
+    }
+    to {
+        text-shadow: 0 0 5px #37c77f, 0 0 10px #37c77f, 0 0 15px #37c77f, 0 0 20px #37c77f, 0 0 30px #ffffff, 0 0 35px #ffffff, 0 0 40px #ffffff, 0 0 45px #ffffff;
+    }
+}
+
+/* image grid */
+#img-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.img-column img {
+    border-radius: 3px;
+    box-shadow: 3px 3px 8px 0px #000000aa;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* timer display/button/adjustments/etc. container */
+#content-container {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 65% 20%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    width: 100%;
+}
+#content-container > * {
+    align-items: center;
+    background-color: #37c77f;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px 0px #000000aa;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+
+/* timer display */
+#timer-container > h1 {
+    grid-column: 1;
+    padding: 0 4px;
+}
+
+/* timer button */
+#timer-button {
+    font-size: 1.3rem;
+    font-weight: bold;
+    grid-column: 2;
+    transition: background-color 0.2s ease;
+}
+
+/* timer adjustments */
+#adjustment-container {
+    grid-column: 1;
+}
+#adjustment-button-container {
+    display: inline-grid;
+    gap: 8px;
+    justify-content: center;
+    margin-left: 16px;
+}
+#adjustment-button-container button {
+    align-items: center;
+    background-color: #00c8f4;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px 0px #000000aa;
+    display: flex;
+    justify-content: center;
+    padding: 4px 8px;
+}
+#adjustment-button-container button:nth-child(1) {
+    grid-column: 1;
+}
+#adjustment-button-container button:nth-child(2) {
+    grid-column: 2;
+}
+#adjustment-button-container button:nth-child(3) {
+    grid-column: 3;
+}
+#adjustment-button-container button:nth-child(4) {
+    grid-column: 4;
+}
+#adjustment-button-container button:nth-child(5) {
+    grid-column: 5;
+}
+#reset img {
+    max-width: 24px;
+}
+.timer-adjustment {
+    transition: text-shadow, box-shadow 0.2s ease;
+}
+
+/* last paused display */
+#last-paused {
+    grid-column: 2
+}
+
+/* popup that shows once timer runs out */
+#timer-end-modal {
+    background-color: #00000066; /* Black w/ opacity */
+    display: none;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+#timer-end-modal-content button {
+    background: none;
+    border: none;
+    float: right;
+}
+#timer-end-modal-content img {
+    max-width: 24px;
+}
+#timer-end-modal-content {
+    background-color: #0091bc;
+    border-radius: 10px;
+    margin: 25vh auto;
+    padding: 16px;
+    width: fit-content;
+}
+#timer-end-modal-text {
+    padding: 32px;
+}
+#well-done-you {
+    animation: glow 1s ease-in-out infinite alternate;
+}
