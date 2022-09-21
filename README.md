@@ -7,6 +7,6 @@ This was initially made around January 2020 when I was only a couple months into
 <br/>
 I needed a way to help me focus, so this was the result. It's got all the things I needed: a timer to help dedicate set time to my work, a moodboard showing the reason I'm working so hard, and a nice quote which meant something to me. 😊
 
-![image](https://github.com/calebwebdesigner/theWorkItTimer.js/blob/main/screenshot.png) 
+![image](https://github.com/calebwebdesigner/theWorkItTimer.js/blob/main/ignore/v1-screenshots/screenshot.png) 
 
 Copyright © 2020, calebwebdesigner
