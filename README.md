@@ -9,4 +9,4 @@ I needed a way to help me focus, so this was the result. It's got all the things
 
 ![image](https://github.com/calebwebdesigner/theWorkItTimer.js/blob/main/ignore/v1-screenshots/screenshot.png) 
 
-Copyright © 2020, calebwebdesigner
+Copyright © 2020, calebwebdesigner.
