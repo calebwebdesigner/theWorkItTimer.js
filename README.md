@@ -1,10 +1,11 @@
 # theWorkItTimer.js
 A timer to help focus on the task/s at hand. ⏲️ 
 
-Initially made around January 2020 when I was starting out on my JavaScript journey. Have cleaned up the code a little before posting though.
+This was initially made around January 2020 when I was only a couple months into my JavaScript journey. I thought to upload this here as a momento of some of my first moments with Javascript, it also serves as a reminder of how far I'm progressing each day.
 
-I needed a way to help me focus, so one day I thought to make this, it's got all the things I needed: a timer to help dedicate set time to my work, a moodboard showing the reason I'm working so hard, and a nice quote which means something to me. 😊
+**Why did I make theWorkItTimer.js?**
+I needed a way to help me focus, so this was the result. It's got all the things I needed: a timer to help dedicate set time to my work, a moodboard showing the reason I'm working so hard, and a nice quote which meant something to me. 😊
 
 ![image](https://github.com/calebwebdesigner/theWorkItTimer.js/blob/main/screenshot.png) 
 
-Copyright © 2022, calebwebdesigner
+Copyright © 2020, calebwebdesigner
